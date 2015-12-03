@@ -11,17 +11,21 @@ var ClickToSelect = React.createClass({
   },
   select: function(e) {
     e.preventDefault();
-    var self = React.findDOMNode(this),
-      range = document.createRange(),
+    var range = document.createRange(),
       sel = window.getSelection();
-    range.selectNodeContents(self);
+    range.selectNodeContents(this._target);
     sel.removeAllRanges();
     sel.addRange(range);
   },
   render: function() {
     return React.createElement(
       'span',
-      { onClick: this.select },
+      {
+        onClick: this.select
+        ref: function(target) {
+          this._target = target;
+        }
+      },
       this.props.children);
   }
 });
