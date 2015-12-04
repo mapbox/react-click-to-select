@@ -15,7 +15,10 @@
   ],
   "author": "Tom MacWright",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
+    "react": "0.13.x || 0.14.x"
+  },
+  "devDependencies": {
     "react": "^0.13.0"
   },
   "repository": {
