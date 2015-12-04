@@ -1,6 +1,6 @@
 {
   "name": "react-click-to-select",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a higher-order component that selects elements contained within it on click",
   "main": "index.js",
   "scripts": {

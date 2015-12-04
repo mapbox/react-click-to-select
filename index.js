@@ -21,7 +21,7 @@ var ClickToSelect = React.createClass({
     return React.createElement(
       'span',
       {
-        onClick: this.select
+        onClick: this.select,
         ref: function(target) {
           this._target = target;
         }
