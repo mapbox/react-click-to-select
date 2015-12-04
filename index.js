@@ -18,12 +18,13 @@ var ClickToSelect = React.createClass({
     sel.addRange(range);
   },
   render: function() {
+    var self = this;
     return React.createElement(
       'span',
       {
         onClick: this.select,
         ref: function(target) {
-          this._target = target;
+          self._target = target;
         }
       },
       this.props.children);
