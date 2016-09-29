@@ -16,7 +16,7 @@
   "author": "Tom MacWright",
   "license": "ISC",
   "peerDependencies": {
-    "react": "0.13.x || 0.14.x"
+    "react": "0.13.x || 0.14.x || 0.15.x"
   },
   "devDependencies": {
     "react": "^0.13.0"
