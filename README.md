@@ -5,7 +5,7 @@ when they're clicked.
 
 ## install
 
-    npm install --save react-click-to-select
+    npm install --save @mapbox/react-click-to-select
 
 ## use
 
