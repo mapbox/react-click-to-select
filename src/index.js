@@ -22,7 +22,7 @@ class ClickToSelect extends React.PureComponent {
 
   render() {
     return (
-      <div ref={getRef} onClick={this.select}>
+      <div ref={this.getRef} onClick={this.select}>
         {this.props.children}
       </div>
     );
@@ -30,7 +30,7 @@ class ClickToSelect extends React.PureComponent {
 }
 
 ClickToSelect.propTypes = {
-  children: React.PropTypes.any.isRequired
+  children: PropTypes.any.isRequired
 };
 
 export default ClickToSelect;
