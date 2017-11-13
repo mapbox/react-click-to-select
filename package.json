@@ -7,7 +7,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "build": "rm -rf dist && babel src -d dist"
   },
   "keywords": [
