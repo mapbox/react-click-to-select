@@ -30,7 +30,7 @@ class ClickToSelect extends React.PureComponent {
   };
 
   render() {
-    const Element = this.props.containerElement === 'div' ? div : span;
+    const Element = this.props.containerElement;
 
     return (
       <Element ref={this.getRef} onClick={this.select}>
