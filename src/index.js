@@ -9,11 +9,11 @@ import PropTypes from 'prop-types';
 class ClickToSelect extends React.PureComponent {
   static propTypes = {
     children: PropTypes.any.isRequired,
-    block: PropTypes.bool,
+    containerElement: PropTypes.oneOf(['span', 'div']),
   };
 
   static defaultProps = {
-    block: true,
+    containerElement: 'span',
   };
 
   select = e => {
@@ -30,7 +30,7 @@ class ClickToSelect extends React.PureComponent {
   };
 
   render() {
-    const Element = this.props.block ? 'div' : 'span';
+    const Element = { div, span }[this.props.containerElement];
 
     return (
       <Element ref={this.getRef} onClick={this.select}>
