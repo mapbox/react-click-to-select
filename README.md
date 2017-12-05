@@ -20,7 +20,9 @@ can use a div instead:
 
 ```jsx
 <ClickToSelect containerElement="div">
-  <p>this text will be selected when clicked</p>
+  <p>
+    this text will be selected when clicked
+  </p>
 </ClickToSelect>
 ```
 
