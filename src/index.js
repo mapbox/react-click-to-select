@@ -7,6 +7,15 @@ import PropTypes from 'prop-types';
  * the text within.
  */
 class ClickToSelect extends React.PureComponent {
+  static propTypes = {
+    children: PropTypes.any.isRequired,
+    containerElement: PropTypes.oneOf(['span', 'div']),
+  };
+
+  static defaultProps = {
+    containerElement: 'span',
+  };
+
   select = e => {
     e.preventDefault();
     const range = document.createRange();
@@ -21,16 +30,14 @@ class ClickToSelect extends React.PureComponent {
   };
 
   render() {
+    const Element = this.props.containerElement;
+
     return (
-      <div ref={this.getRef} onClick={this.select}>
+      <Element ref={this.getRef} onClick={this.select}>
         {this.props.children}
-      </div>
+      </Element>
     );
   }
 }
-
-ClickToSelect.propTypes = {
-  children: PropTypes.any.isRequired
-};
 
 export default ClickToSelect;
