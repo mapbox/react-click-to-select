@@ -9,6 +9,23 @@ when they're clicked.
 
 ## use
 
-```js
-<ClickToSelect>this text will be selected when clicked</ClickToSelect>
+```jsx
+<ClickToSelect>
+  this text will be selected when clicked
+</ClickToSelect>
+```
+
+By default ClickToSelect contains the children within a span element, but you
+can use a div instead:
+
+```jsx
+<ClickToSelect containerElement="div">
+  <p>this text will be selected when clicked</p>
+</ClickToSelect>
+```
+
+This avoids React warnings:
+
+```jsconsole
+validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
 ```
