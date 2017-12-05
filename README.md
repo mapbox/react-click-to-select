@@ -3,6 +3,9 @@
 A React component that selects the text / elements contained within
 when they're clicked.
 
+[![npm](https://img.shields.io/npm/v/@mapbox/react-click-to-select.svg)]()
+[![npm license](https://img.shields.io/npm/l/@mapbox/react-click-to-select.svg)](https://github.com/mapbox/react-click-to-select/blob/master/LICENSE.txt)
+
 ## install
 
     npm install --save @mapbox/react-click-to-select
