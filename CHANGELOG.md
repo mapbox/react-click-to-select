@@ -1,6 +1,10 @@
 Changelog
 ---
 
+## 2.1.0
+
+- Render children in a `span` by default. Specify containerElement="div" to override. [#14](https://github.com/mapbox/react-click-to-select/pull/14)
+
 ## 2.0.1
 
 - Build after local install with `prepare` [#13](https://github.com/mapbox/react-click-to-select/pull/13)
