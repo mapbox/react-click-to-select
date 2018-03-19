@@ -29,6 +29,16 @@ can use a div instead:
 </ClickToSelect>
 ```
 
+You can pass a function that will be called when text is selected. This is useful for doing things like showing a tooltip with a prompt to copy.
+
+```jsx
+<ClickToSelect onSelect={myFunc}>
+  <p>
+    this text will be selected when clicked
+  </p>
+</ClickToSelect>
+```
+
 This avoids React warnings:
 
 ```jsconsole

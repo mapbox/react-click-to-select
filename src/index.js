@@ -10,6 +10,7 @@ class ClickToSelect extends React.PureComponent {
   static propTypes = {
     children: PropTypes.any.isRequired,
     containerElement: PropTypes.oneOf(['span', 'div']),
+    onSelect: PropTypes.func
   };
 
   static defaultProps = {
@@ -17,12 +18,14 @@ class ClickToSelect extends React.PureComponent {
   };
 
   select = e => {
+    const { onSelect } = this.props;
     e.preventDefault();
     const range = document.createRange();
     const sel = window.getSelection();
     range.selectNodeContents(this._target);
     sel.removeAllRanges();
     sel.addRange(range);
+    if (onSelect) onSelect();
   };
 
   getRef = target => {
