@@ -1,6 +1,10 @@
 Changelog
 ---
 
+## 2.1.1
+
+- Declare compatibility with react 17. [#17](https://github.com/mapbox/react-click-to-select/pull/17)
+
 ## 2.1.0
 
 - Render children in a `span` by default. Specify containerElement="div" to override. [#14](https://github.com/mapbox/react-click-to-select/pull/14)
